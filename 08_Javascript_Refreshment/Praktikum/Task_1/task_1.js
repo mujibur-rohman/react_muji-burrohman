@@ -1,4 +1,4 @@
-var a = 5;
+let a = 5;
 let b = 'Kampus Merdeka';
 const nama = 'budi';
 let terdaftar = true; // ===== Jawaban B =====
