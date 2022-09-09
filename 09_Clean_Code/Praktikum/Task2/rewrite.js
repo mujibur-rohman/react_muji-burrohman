@@ -4,12 +4,11 @@ class Kendaraan {
 }
 
 class Mobil extends Kendaraan {
-  berjalan() {
-    tambahKecepatan(10);
-  }
-
   tambahKecepatan(kecepatanBaru) {
     this.kecepatanPerJam += kecepatanBaru;
+  }
+  berjalan() {
+    this.tambahKecepatan(10);
   }
 }
 
@@ -20,3 +19,6 @@ mobilCepat.berjalan();
 
 let mobilLamban = new Mobil();
 mobilLamban.berjalan();
+
+console.log(mobilCepat.kecepatanPerJam);
+console.log(mobilLamban.kecepatanPerJam);
