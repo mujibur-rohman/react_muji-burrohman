@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import todosData from '../todosData';
+import todosData from '../../todosData';
 import FormAdd from './FormAdd';
 import TodoItem from './TodoItem';
 

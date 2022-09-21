@@ -2,8 +2,8 @@ import './App.css';
 import Home from './component/Home';
 import SideBar from './component/SideBar';
 import { Route, Routes } from 'react-router-dom';
-import AboutApp from './component/AboutApp';
-import AboutAuthor from './component/AboutAuthor';
+import AboutApp from './component/About/AboutApp';
+import AboutAuthor from './component/About/AboutAuthor';
 
 function App() {
   return (
