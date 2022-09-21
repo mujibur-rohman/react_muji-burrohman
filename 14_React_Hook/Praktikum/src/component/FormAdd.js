@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const FormAdd = ({ addTodos }) => {
   const [title, setTitle] = useState('');
@@ -11,10 +11,18 @@ const FormAdd = ({ addTodos }) => {
     addTodos(title);
     setTitle('');
   };
+
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <div>
       <form>
         <input
+          ref={inputRef}
           type="text"
           className="text"
           value={title}
