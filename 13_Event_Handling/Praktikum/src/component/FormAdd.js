@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import todosData from '../todosData';
+import { useState } from 'react';
 
 const FormAdd = ({ addTodos }) => {
   const [title, setTitle] = useState('');

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import todos from '../todosData';
+import { useState } from 'react';
 
 const TodoItem = ({ todo, deleteTodo }) => {
   const [isCompleted, setIsCompleted] = useState(todo.completed);
