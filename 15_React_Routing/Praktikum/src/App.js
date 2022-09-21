@@ -4,6 +4,7 @@ import SideBar from './component/SideBar';
 import { Route, Routes } from 'react-router-dom';
 import AboutApp from './component/About/AboutApp';
 import AboutAuthor from './component/About/AboutAuthor';
+import NotFound from './component/NotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-app" element={<AboutApp />} />
           <Route path="/about-author" element={<AboutAuthor />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
