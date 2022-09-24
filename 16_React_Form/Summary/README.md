@@ -1,15 +1,12 @@
-# Summary React Hook
+# Summary React Form
  
 1. Poin 1
-Hook adalah function/method yang memungkinkan kita mengakses berbagai fitur di
-functional component yang sebelumnya hanya tersedia di class component. Pengertian ini
-memang agak "mengambang", tapi itulah kesimpulan yang saya dapat setelah mempelajari
-hook. Hook hadir dalam berbagai nama tergantung fitur apa yang ingin dipakai. Sebagai contoh, untuk membuat state, nama hooknya adalah useState().
+Controlled Input adalah elemen form yang nilainya (value / state) dikontrol oleh React. Lawannya adalah Uncontrolled Input, state-nya dikontrol oleh elemen itu sendiri seperti normalnya form biasa. Nilai yang dimasukin ke Controlled Input diproses dulu oleh React (onChange callback) baru inputnya diupdate. Dalam contoh di atas, text yang dimasukin ke text input nggak langsung dipake sebagai input.value tapi dikonversi dulu ke huruf besar oleh handleNameChange. value dari inputnya sendiri baru diset setelah state berubah (setelah setState()).
 
 
 2. Poin 2
-Effect adalah operasi di dalam sebuah fungsi yang memengaruhi hal diluar lingkup fungsi itu. Misalnya berinteraksi dengan web API (menghasilkan request, data disimpan di basis data, atau data diambil dari basis data, dll), mencatat peristiwa ke dalam log, operasi-operasi tersebut memengaruhi hal diluar lingkup fungsi. Tapi Effect tidak terbatas pada contoh-contoh di atas, ada contoh lain yang lebih sulit diidentifikasi sebagai Effect, misalnya memanggil setTimeout() di dalam fungsi, menyisipkan item baru ke dalam array yang didapat dari function argument, hal-hal itu termasuk ke dalam Effect.
+Pada sebagian besar kasus, kami sarankan untuk menggunakan controlled component untuk mengimpementasikan form. Pada controlled component, data form ditangani oleh komponen React. Cara alternatifnya adalah menggunakan uncontrolled component, di mana data form akan ditangani oleh DOM-nya sendiri.
 
 3. Poin 3 
-Effect Dependencies merupakan Array yang bisa kita
-isi identifier baik berupa variabel maupun fungsi yang akan menentukan kapan fungsi Effect akan dipanggil. Array tersebut kita berikan sebagai parameter kedua pada hook useEffect.
+Langkah paling awal untuk bisa memproses form adalah mengambil nilai dari inputan form
+tersebut. kita bisa mensubmit form dengan event onSubmit pada bagian form.
