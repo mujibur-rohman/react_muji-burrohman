@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import todosData from '../todosData';
+import todosData from '../../todosData';
 import FormAdd from './FormAdd';
 import TodoItem from './TodoItem';
 
@@ -25,7 +25,7 @@ const TodoList = () => {
   return (
     <>
       <FormAdd addTodos={addTodos} />
-      <ul>
+      <ul className="list-todo">
         {todos
           .map((todo) => {
             return (
