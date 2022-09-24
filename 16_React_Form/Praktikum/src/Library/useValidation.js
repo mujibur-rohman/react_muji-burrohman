@@ -2,7 +2,7 @@ const useValidation = (value) => {
   let error = {};
   if (!value.fullname.toString()) {
     error.fullname = 'Nama Tidak Boleh Kosong';
-  } else if (!/^[a-z]+$/.test(value.fullname)) {
+  } else if (!/^[a-zA-Z\s]+$/.test(value.fullname)) {
     error.fullname = 'Nama harus berupa huruf';
   }
 

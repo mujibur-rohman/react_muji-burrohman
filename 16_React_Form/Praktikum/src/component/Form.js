@@ -29,6 +29,7 @@ const Form = () => {
     setError(errorValid);
     if (Object.keys(errorValid).length === 0) {
       alert(`Data Pendaftar ${value.fullname} berhasi diterima`);
+      setError({});
     } else {
       alert('Data Pendaftar Tidak Sesuai');
     }
