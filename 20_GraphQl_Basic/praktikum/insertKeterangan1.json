@@ -1,0 +1,11 @@
+{
+  "data": {
+    "insert_keterangan_one": {
+      "id": 3,
+      "id_anggota": 3,
+      "pelajaran": "Sistem Informasi",
+      "nilai": 90,
+      "status": true
+    }
+  }
+}
