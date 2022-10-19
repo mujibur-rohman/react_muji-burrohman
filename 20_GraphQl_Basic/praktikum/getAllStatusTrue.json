@@ -1,0 +1,20 @@
+{
+  "data": {
+    "keterangan": [
+      {
+        "id": 1,
+        "id_anggota": 1,
+        "pelajaran": "Sistem Informasi",
+        "nilai": 85,
+        "status": true
+      },
+      {
+        "id": 3,
+        "id_anggota": 2,
+        "pelajaran": "Sistem Informasi",
+        "nilai": 90,
+        "status": true
+      }
+    ]
+  }
+}

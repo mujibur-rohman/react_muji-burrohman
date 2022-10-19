@@ -1,0 +1,31 @@
+{
+  "data": {
+    "update_keterangan_many": [
+      {
+        "returning": [
+          {
+            "id": 2,
+            "id_anggota": 1,
+            "pelajaran": "React",
+            "nilai": 65,
+            "status": true
+          },
+          {
+            "id": 4,
+            "id_anggota": 2,
+            "pelajaran": "React",
+            "nilai": 50,
+            "status": true
+          },
+          {
+            "id": 6,
+            "id_anggota": 3,
+            "pelajaran": "React",
+            "nilai": 55,
+            "status": true
+          }
+        ]
+      }
+    ]
+  }
+}
